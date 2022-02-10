@@ -13,10 +13,11 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 export default function MediaControlCard({name, artist, image, url, audio}) {
   const theme = useTheme();
   
-  const playSong = () =>{
+  
+  /*const playSong = () =>{
     console.log(audio);
     return (<audio src={audio} autoPlay></audio>)
-  }
+  }*/
 
   
 

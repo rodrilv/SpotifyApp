@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionAreaCard({artist, image}) {
+export default function ActionAreaCard({artist, image, alt}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -13,7 +13,7 @@ export default function ActionAreaCard({artist, image}) {
           component="img"
           height="280"
           image={image}
-          alt="green iguana"
+          alt={alt}
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle1" component="div">
