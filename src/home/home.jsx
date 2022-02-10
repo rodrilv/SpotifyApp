@@ -26,7 +26,7 @@ export default function Home() {
     }
 
     useEffect(() => {
-        if (token) getSpotifyToken();
+        if (!token) getSpotifyToken();
     }, [token]);
 
 
