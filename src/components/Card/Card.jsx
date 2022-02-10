@@ -34,7 +34,8 @@ export default function MediaControlCard({name, artist, image, url, audio}) {
           </Typography>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <IconButton aria-label="previous" >
+        <audio src={audio} controls></audio>
+          {/*<IconButton aria-label="previous" >
             {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
           </IconButton>
           <IconButton aria-label="play/pause">
@@ -42,7 +43,7 @@ export default function MediaControlCard({name, artist, image, url, audio}) {
           </IconButton>
           <IconButton aria-label="next">
             {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
+  </IconButton>*/}
         </Box>
       </Box>
       <a href={url} target="_blank" rel="noreferrer">

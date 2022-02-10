@@ -63,9 +63,9 @@ export default function Home() {
             </Grid>
             <Grid
                 container
-                spacing={{ xs: 6, md: 3 }}
-                columns={{ xs: 4, sn: 8, md: 12 }}
-                padding={10}
+                spacing={{ xs: 3, md: 4 }}
+                columns={{ xs: 2, sn: 8, md: 8 }}
+                padding={1}
             >
                 {data?.tracks &&
                     data?.tracks?.items?.map((track, index) => (
@@ -84,7 +84,7 @@ export default function Home() {
             <Grid
                 container
                 spacing={{ xs: 6, md: 3 }}
-                columns={{ xs: 4, sn: 8, md: 12 }}
+                columns={{ xs: 1, sn: 8, md: 12 }}
                 padding={10}
             >
                 {data?.artists &&
@@ -101,7 +101,7 @@ export default function Home() {
             </Grid>
                 {data?.albums &&
                     data?.albums?.items?.map((album, index) => (
-                        <Grid item xs={2} sm={3} md={3} key={index}>
+                        <Grid item xs={2} sm={5} md={3} key={index}>
                             <ImageList
                                 image={album.images[0]?.url}
                                 alt={album.name}
