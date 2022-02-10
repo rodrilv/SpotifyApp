@@ -1,7 +1,7 @@
 import React from "react";
 export default function Nav() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav style={ {borderRadius : "10px", marginTop:"1%"} } className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
                 <p className="navbar-brand"> Spotify App!</p>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
